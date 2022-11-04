@@ -1,5 +1,5 @@
 ﻿<?php
-    include 'sidebar.html';
+    include 'sidebar.php';
     include 'headbar.php';
 ?>
 <!DOCTYPE html>

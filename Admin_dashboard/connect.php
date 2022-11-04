@@ -11,5 +11,5 @@
     if(!$con){
         die("can't connect ".mysqli_connect_error());
     }
-    echo "connected mysql สำเร็จ";
+    //echo "connected mysql สำเร็จ";
 ?>

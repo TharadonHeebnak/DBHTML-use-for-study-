@@ -53,9 +53,9 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="logout.php">
                     <span class="ti-settings"></span>
-                    <span>Account</span>
+                    <span>logout</span>
                 </a>
             </li>
         </ul>
