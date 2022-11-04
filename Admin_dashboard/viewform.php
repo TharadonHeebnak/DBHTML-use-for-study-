@@ -1,5 +1,6 @@
 <?php
     include 'sidebar.html';
+    include 'headbar.php';
     include 'connect.php';
 ?><!DOCTYPE html>
 <html>
