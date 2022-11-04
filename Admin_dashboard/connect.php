@@ -1,9 +1,9 @@
 <?php
-include 'sidebar.html';
     $servername ="127.0.0.1";
     $username ="root";
+    $dbname = "adm";
     $password ="";
-    $con = mysqli_connect("$servername","$username","$password");
+    $con = mysqli_connect("$servername","$username","$password","$dbname");
 
     //mysqli_connect("localhost","root","");
     //mysqli_connect คำสั่งในการเชื่อมต่อฐานข้อมูล mysql("localhost","root","");

@@ -1,5 +1,6 @@
 ﻿<?php
-include 'sidebar.html';
+    include 'sidebar.html';
+    include 'headbar.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,20 +16,8 @@ include 'sidebar.html';
 
 <body>
     <div class="main-content">
-
-    <header>
-        <div class="search-wrapper">
-            <span class="ti-search"></span>
-            <input type="search" placeholder="Search">
-        </div>
-
-        <div class="social-icons">
-            <span class="ti-bell"></span>
-            <span class="ti-comment"></span>
-            <div></div>
-        </div>
-    </header>
     <main-content><main>
+        <H1>กรอกข้อมูลลูกค้า</H1>
     <form name="addata" action="savedata.php" method="post">
             <table border="1" width="300">
                 <tr>
