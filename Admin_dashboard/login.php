@@ -28,7 +28,7 @@
             <button type="submit" class="btn mt-3">Login</button>
         </form>
         <div class="text-center fs-6">
-            <a href="register_form.php">Forget password?</a>
+            <a href="register_form.php">สมัคร รหัสผ่านใหม่</a>
         </div>
     </div>
 </body>
