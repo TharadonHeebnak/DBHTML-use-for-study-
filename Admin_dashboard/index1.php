@@ -1,5 +1,5 @@
 <?php
-    include 'sidebar.php';
+    include 'session.php';
     include 'headbar.php';
 ?>
     <!DOCTYPE html>
@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-        <title>Document</title>
+        <title>Home</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -16,7 +16,7 @@
     <body>
         <div class="main-content">
             <main>
-
+            
                 <h2 class="dash-title">Overview</h2>
 
                 <div class="dash-cards">
