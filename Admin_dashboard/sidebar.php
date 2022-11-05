@@ -11,7 +11,7 @@
     <div class="sidebar-menu">
         <ul>
             <li>
-                <a href="index1.php">
+                <a href="index.php">
                     <span class="ti-home"></span>
                     <span>Home</span>
                 </a>
