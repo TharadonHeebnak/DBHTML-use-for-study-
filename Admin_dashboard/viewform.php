@@ -1,5 +1,5 @@
 <?php
-    include 'session.php';
+    include 'sidebar.php';
     include 'headbar.php';
     include 'connect.php';
 ?><!DOCTYPE html>
