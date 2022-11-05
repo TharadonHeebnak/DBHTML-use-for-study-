@@ -5,7 +5,7 @@ session_start();
                   include("connect.php");
 				//รับค่า user & password
                   $Username = $_POST['Username'];
-                  $Password = ($_POST['Password']);
+                  $Password = md5($_POST['Password']);
 				//query 
                   $sql="SELECT * FROM users Where Username='".$Username."' and Password='".$Password."' ";
  
@@ -16,7 +16,7 @@ session_start();
                       $row = mysqli_fetch_array($result);
  
                       $_SESSION["UserID"] = $row["id"];
-                      $_SESSION["Users"] = $row["users"];
+                      $_SESSION["Users"] = $row["username"];
                       $_SESSION["Userlevel"] = $row["userlevel"];
  
                       if($_SESSION["Userlevel"]=="A"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
@@ -27,7 +27,7 @@ session_start();
  
                       if ($_SESSION["Userlevel"]=="M"){  //ถ้าเป็น member ให้กระโดดไปหน้า user_page.php
  
-                        Header("Location: user_page.php");
+                        Header("Location: index1.php");
  
                       }
  
