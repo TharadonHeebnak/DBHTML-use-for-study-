@@ -8,7 +8,7 @@
 </head>
 <body>
  
-      <form name="frmlogin"  method="post" action="log.php">
+      <form name="frmlogin"  method="post" action="loginfuntion.php">
         <p> </p>
         <p><b> Login Form </b></p>
         <p> ชื่อผู้ใช้ :
@@ -21,6 +21,8 @@
           <button type="submit">Login</button>
           &nbsp;&nbsp;
           <button type="reset">Reset</button>
+          &nbsp;&nbsp;
+          <a href="register_form.php">สมัครสมาชิก</a>
           <br>
         </p>
       </form>
