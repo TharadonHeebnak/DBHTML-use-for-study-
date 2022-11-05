@@ -1,50 +1,55 @@
-<?php
-?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>ฟอร์มสมัคร</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylelogin.css">
 </head>
-
 <body>
-    <div class="main-content">
-    <main-content><main>
-        <H1>กรอกข้อมูลลูกค้า</H1>
-    <form name="addata" action="savedata.php" method="post">
-            <table border="1" width="300">
-                <tr>
-                    <td>ชื่อ</td>
-                    <td><input type="text" name="textfirstname" size="30"></td>
-                </tr>
-                <tr>
-                    <td>นามสกุล</td>
-                    <td><input type="text" name="textlastname" size="30"></td>
-                </tr>
-                <tr>
-                    <td>username</td>
-                    <td><input type="text" name="textusername" size="30"></td>
-                </tr>
-                <tr>
-                    <td>เบอร์โทร</td>
-                    <td><input type="number" name="textphone" size="30"></td>
-                </tr>
-                <tr>
-                    <td>รหัสผ่าน</td>
-                    <td><input type="password" name="textpass" size="30"></td>
-                </tr>
-            </table>
-            <input type="submit" name="submit" value="ตกลง">
+<div class="wrapper">
+        <div class="logo">
+            <img src="smols.jpg" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            Login
+        </div>
+        <form name="frmlogin"class="p-3 mt-3"method="post" action="loginfuntion.php">
+            ชื่อ
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="textfirstname" id="Password" placeholder="ชื่อ">
+            </div>
+            นามสกุล
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="text" name="textlastname" id="Password" placeholder="นามสกุล">
+            </div>
+            username
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="textusername" id="Password" placeholder="username">
+            </div>
+            เบอร์โทร
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="number" name="textphone" id="Password" placeholder="เบอร์โทร">
+            </div>
+            รหัสผ่าน
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="password" name="textpass" id="Password" placeholder="รหัสผ่าน">
+            </div>
+            <button type="submit" class="btn mt-3">บันทึกข้อมูล</button>
         </form>
-    </main></main-content>
-    
-
-</div>
+    </div>
 </body>
-
 </html>
+
+
+
+
+
+

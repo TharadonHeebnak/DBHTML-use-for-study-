@@ -1,30 +1,41 @@
-<?php session_start();?>
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Form Login</title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylelogin.css">
 </head>
 <body>
- 
-      <form name="frmlogin"  method="post" action="loginfuntion.php">
-        <p> </p>
-        <p><b> Login Form </b></p>
-        <p> ชื่อผู้ใช้ :
-          <input type="text"   id="Username" required name="Username" placeholder="Username">
-        </p>
-        <p>รหัสผ่าน :
-          <input type="password"   id="Password"required name="Password" placeholder="Password">
-        </p>
-        <p>
-          <button type="submit">Login</button>
-          &nbsp;&nbsp;
-          <button type="reset">Reset</button>
-          &nbsp;&nbsp;
-          <a href="register_form.php">สมัครสมาชิก</a>
-          <br>
-        </p>
-      </form>
+<div class="wrapper">
+        <div class="logo">
+            <img src="smols.jpg" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            Login
+        </div>
+        <form name="frmlogin"class="p-3 mt-3"method="post" action="loginfuntion.php">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text"   id="Username" required name="Username" placeholder="Username">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" required name="Password" id="Password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn mt-3">Login</button>
+        </form>
+        <div class="text-center fs-6">
+            <a href="register_form.php">Forget password?</a>
+        </div>
+    </div>
 </body>
 </html>
+
+
+
+
+
+
