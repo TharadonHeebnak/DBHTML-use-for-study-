@@ -14,7 +14,7 @@
             <img src="smols.jpg" alt="">
         </div>
         <div class="text-center mt-4 name">
-            Login
+            Register
         </div>
         <form name="frmlogin"class="p-3 mt-3"method="post" action="loginfuntion.php">
             ชื่อ
