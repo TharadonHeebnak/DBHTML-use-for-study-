@@ -25,7 +25,7 @@
             <li>
                 <a href="viewform.php">
                     <span class="ti-agenda"></span>
-                    <span>รายชื้อลูกค้า</span>
+                    <span>รายชื่อลูกค้า</span>
                 </a>
             </li>
             <li>
