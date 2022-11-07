@@ -29,15 +29,15 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="formroom.php">
                     <span class="ti-clipboard"></span>
-                    <span>Leaves</span>
+                    <span>เพิ่มห้อง</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="viewroom.php">
                     <span class="ti-folder"></span>
-                    <span>Projects</span>
+                    <span>ห้องทั้งหมด</span>
                 </a>
             </li>
             <li>
