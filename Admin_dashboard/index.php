@@ -1,6 +1,7 @@
 <?php
     include 'session.php';
     include 'headbar.php';
+
 ?>
     <!DOCTYPE html>
     <html lang="en">
