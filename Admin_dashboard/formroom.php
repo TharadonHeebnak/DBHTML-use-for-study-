@@ -11,18 +11,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 </head>
 
 <body>
     <div class="main-content">
     <main-content><main>
-        <H1>กรอกข้อมูลลูกค้า</H1>
+        <H1>กรอกข้อมูลห้อง</H1>
+        <section class="recent">
+                    <div class="activity-grid">
+                        <div class="activity-card">
     <form name="addroom" action="saveroom.php" method="post">
             <table border="1" width="300">
                 <tr>
@@ -56,6 +53,7 @@
             </table>
             <input type="submit" name="submit" value="ตกลง">
         </form>
+                        </div></div></div>
     </main></main-content>
     
 

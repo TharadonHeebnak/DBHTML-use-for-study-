@@ -32,6 +32,9 @@
     ?>
     <div class="main-content">
     <main>
+    <section class="recent">
+                    <div class="activity-grid">
+                        <div class="activity-card">
     <form name="resechdata" method="POST" action="<?php echo $_SERVER['SCRIPT_NAME'];?>">
         <!-- $_SERVER['SCRIPT_NAME'] เช็คสคิปที่ทำงานอยู่บนเซิฟเวอร์เสมือน -->
         <table width = 700 border="1">
@@ -72,6 +75,9 @@
     </table>
     </main>
     </div>
+            </div>
+            </div>
+            </div>
     
     
                 <?php

@@ -18,6 +18,9 @@
 <body>
     <div class="main-content">
     <main-content><main>
+    <section class="recent">
+                    <div class="activity-grid">
+                        <div class="activity-card">
         <H1>กรอกข้อมูลการเช่า</H1>
     <form name="rentroom" action="saveroom.php" method="post">
             <table border="1" width="300">
@@ -52,6 +55,7 @@
             </table>
             <input type="submit" name="submit" value="ตกลง">
         </form>
+</div></div></div>
     </main></main-content>
     
 

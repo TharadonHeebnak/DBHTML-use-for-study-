@@ -17,6 +17,9 @@
 <body>
     <div class="main-content">
     <main-content><main>
+    <section class="recent">
+                    <div class="activity-grid">
+                        <div class="activity-card">
         <H1>กรอกข้อมูลลูกค้า</H1>
     <form name="addata" action="savedata.php" method="post">
             <table border="1" width="300">
@@ -39,7 +42,10 @@
             </table>
             <input type="submit" name="submit" value="ตกลง">
         </form>
-    </main></main-content>
+    </main>
+</div>
+</div>
+</div></main-content>
     
 
 </div>
