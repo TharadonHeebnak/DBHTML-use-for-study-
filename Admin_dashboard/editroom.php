@@ -4,7 +4,7 @@
     <title>Edit</title>
 </head>
 <body>
-    <form name="roomditdata" action="save_editdata.php? id=<?php echo $_GET["id"];?>"method="post">
+    <form name="roomditdata" action="saveeditroom.php? id=<?php echo $_GET["id"];?>"method="post">
     <!--หลังจากเก้ไขขอมุลเล้วกดปุ่มค่าไอดีจะส่งไปที่ไฟล์รับค่าเก้ไขโดยจะส่งเบบ post เพื่อซ่อนข้อมูลที่แก้ไข address bar ต่อท้าย url-->
     <?php
     include 'connect.php';
@@ -13,7 +13,7 @@
     $result = mysqli_fetch_array($query);
     if(!$result)
     {
-        echo " ไม่พบข้อมูล roomid = ".$_GET["roomid"];
+        echo " ไม่พบข้อมูล roomid = ".$_GET["id"];
     }else
     {?>
     <table width="300"border="1">
@@ -27,15 +27,15 @@
         </tr>
         <tr>
             <th width="150">ประเภทห้อง </th>
-            <td width="240"><input type="text" name="textprice" value="<?php echo $result["typeroom"];?>"></td>
+            <td width="240"><input type="text" name="texttyperoom" value="<?php echo $result["typeroom"];?>"></td>
         </tr>
         <tr>
             <th width="150">ราคา </th>
-            <td width="240"><input type="text" name="textstartdate" value="<?php echo $result["price"];?>"></td>
+            <td width="240"><input type="number" name="textprice" value="<?php echo $result["price"];?>"></td>
         </tr>
         <tr>
             <th width="150">วันที่เริ่มเข้าพัก </th>
-            <td width="240"><input type="text" name="textphone" value="<?php echo $result["startdate"];?>"></td>
+            <td width="240"><input type="date" name="textstartdate" value="<?php echo $result["startdate"];?>"></td>
         </tr>
     </table>
     <input type="submit" name="submit" value="บันทึกการเก้ไข">

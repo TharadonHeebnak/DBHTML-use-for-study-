@@ -32,68 +32,13 @@
 
 $sql = "select * from notify where datepost like '%".$strKeyword."%' ";
 $query = mysqli_query($con,$sql);
-
-$room="select count(roomid) as totalmember from rooms "; 
-$result=mysqli_query($con,$room); 
-$row=mysqli_fetch_array($result);
-
-$price="select sum(price) as totalmember from rooms "; 
-$result=mysqli_query($con,$price); 
-$sumprice=mysqli_fetch_array($result);
-
-$usercount="select count(id) as totalmember from users "; 
-$result=mysqli_query($con,$usercount); 
-$countuser=mysqli_fetch_array($result);
-
-
 ?>
         <div class="main-content">
             <main>
             
-                <h2 class="dash-title">Home Dashbord</h2>
+                <h2 class="dash-title">หน้าหลัก</h2>
 
-                <div class="dash-cards">
-                    <div class="card-single">
-                        <div class="card-body">
-                            <span class="ti-home"></span>
-                            <div>
-                                <h5>จำนวนห้อง</h5>
-                                <h4><?php echo $row['totalmember'];?></h4>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <a href="viewroom.php">View all</a>
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-                        <div class="card-body">
-                            <span class="ti-money"></span>
-                            <div>
-                                <h5>ค่าเช่าที่ได้รับ/เดือน</h5>
-                                <h4><?php echo $sumprice['totalmember'];?></h4>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            
-                        </div>
-                    </div>
-
-                    <div class="card-single">
-                        <div class="card-body">
-                            <span class="ti-check-box"></span>
-                            <div>
-                                <h5>จำนวนคนเข้าพัก</h5>
-                                <h4><?php echo $countuser['totalmember'];?></h4>
-                            </div>
-                        </div>
-                        <div class="card-footer">
-                            <a href="viewform.php">View all</a>
-                        </div>
-                    </div>
-                </div>
-
-
+                
                 <section class="recent">
                     <div class="activity-grid">
                         <div class="activity-card">
@@ -102,10 +47,10 @@ $countuser=mysqli_fetch_array($result);
         <!-- $_SERVER['SCRIPT_NAME'] เช็คสคิปที่ทำงานอยู่บนเซิฟเวอร์เสมือน -->
         <table width = 700 border="1">
             <tr>
-                <th>ค้นหารายชื่อ
+<!--                 <th>ค้นหารายชื่อ
                     <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword ?>">
                     <input type="submit" value="Search">
-                </th>
+                </th> -->
             </tr>
         </table>
     </form>
@@ -113,11 +58,10 @@ $countuser=mysqli_fetch_array($result);
             <div class="table-responsive">
             <table width="700" border="1">
             <tr>
-            <!-- <th width= "50">ลำดับที่</th> -->
             <th width= "100">วันที่โพส</th>
             <th width= "400">กระดานข่าว</th>
-            <th width= "100">เเก้ไขโพส</th>
-            <th width= "100">ลบโพส</th>
+<!--             <th width= "100">เเก้ไขโพส</th>
+            <th width= "100">ลบโพส</th> -->
                         <?php
                 while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))
                 // mysqli_fetch_array() ฟังก์ชั่นในการกึงข้อมูลแถวเป็นอาเรย์
@@ -125,12 +69,11 @@ $countuser=mysqli_fetch_array($result);
                 {
                     ?>  
                     <tr>
-                        <!-- <td><?php echo $result["postid"];?></td> -->
                         <td><?php echo $result["datepost"];?></td>
                         <td><?php echo $result["post"];?></td>
                         
-                        <td> <a href="editpost.php?id=<?php echo $result["postid"];?>">แก้ไขข้อมูล</a></td>
-                        <td> <a href="deletepost.php?id=<?php echo $result["postid"];?>">ลบข้อมูล</a></td>
+                        <!-- <td> <a href="savepost.php?id=<?php echo $result["postid"];?>">แก้ไขข้อมูล</a></td>
+                        <td> <a href="deletepost.php?id=<?php echo $result["postid"];?>">ลบข้อมูล</a></td> -->
                     </tr>
                     <?php
                   }

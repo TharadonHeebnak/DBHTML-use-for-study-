@@ -7,7 +7,7 @@ $sql = "INSERT INTO rooms (roomid,userroom,typeroom,price,startdate) VALUES ('".
 ,'".$_POST["textuserroom"]."'
 ,'".$_POST["texttyperoom"]."'
 ,'".$_POST["textprice"]."'
-,'".$_POST["textstartdate"]."'))";
+,'".$_POST["textstartdate"]."')";
 $query = mysqli_query($con,$sql);
 if ($query) {
     alert("บันทึกข้อมูลเรียบร้อยเเล้ว");

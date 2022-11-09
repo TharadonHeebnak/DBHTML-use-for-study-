@@ -2,8 +2,8 @@
 <div name="sidbarnav" class="sidebar">
     <div class="sidebar-header">
         <h3 class="brand">
-            <span class="ti-unlink"></span>
-            <span>easywire</span>
+            <span class="ti-home"></span>
+            <span>จัดการห้องพัก</span>
         </h3>
         <label for="sidebar-toggle" class="ti-menu-alt"></label>
     </div>
@@ -11,7 +11,7 @@
     <div class="sidebar-menu">
         <ul>
             <li>
-                <a href="index.php">
+                <a href="indexM.php">
                     <span class="ti-home"></span>
                     <span>Home</span>
                 </a>
@@ -24,37 +24,43 @@
             </li> -->
 <!--             <li>
                 <a href="viewform.php">
-                    <span class="ti-agenda"></span>
-                    <span>รายชื้อลูกค้า</span>
+                    <span class="ti-view-list"></span>
+                    <span>รายชื่อลูกค้า</span>
                 </a>
-            </li>
- -->            <li>
-                <a href="">
+            </li> -->
+<!--             <li>
+                <a href="formroom.php">
                     <span class="ti-clipboard"></span>
-                    <span>Leaves</span>
+                    <span>เพิ่มห้อง</span>
                 </a>
-            </li>
+            </li> -->
             <li>
-                <a href="">
+                <a href="viewroomM.php">
                     <span class="ti-folder"></span>
-                    <span>Projects</span>
+                    <span>ห้องทั้งหมด</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="rentform.php">
                     <span class="ti-time"></span>
-                    <span>Timesheet</span>
+                    <span>เช่าห้อง</span>
                 </a>
             </li>
             <li>
-                <a href="">
-                    <span class="ti-book"></span>
-                    <span>Contacts</span>
+                <a href="uploadf.php">
+                    <span class="ti-money"></span>
+                    <span>จ่ายค่าเช่า</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.php">
+                    <span class="ti-help-alt"></span>
+                    <span>ติดต่อเพิ่มเติม</span>
                 </a>
             </li>
             <li>
                 <a href="logout.php">
-                    <span class="ti-settings"></span>
+                    <span class="ti-close"></span>
                     <span>logout</span>
                 </a>
             </li>

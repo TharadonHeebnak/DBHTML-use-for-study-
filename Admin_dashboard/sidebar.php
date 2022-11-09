@@ -2,8 +2,8 @@
 <div name="sidbarnav" class="sidebar">
     <div class="sidebar-header">
         <h3 class="brand">
-            <span class="ti-unlink"></span>
-            <span>easywire</span>
+            <span class="ti-home"></span>
+            <span>จัดการห้องพัก</span>
         </h3>
         <label for="sidebar-toggle" class="ti-menu-alt"></label>
     </div>
@@ -24,7 +24,7 @@
             </li>
             <li>
                 <a href="viewform.php">
-                    <span class="ti-agenda"></span>
+                    <span class="ti-view-list"></span>
                     <span>รายชื่อลูกค้า</span>
                 </a>
             </li>
@@ -41,20 +41,32 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="rentform.php">
                     <span class="ti-time"></span>
-                    <span>Timesheet</span>
+                    <span>เช่าห้อง</span>
                 </a>
             </li>
             <li>
-                <a href="">
-                    <span class="ti-book"></span>
-                    <span>Contacts</span>
+                <a href="uploadf.php">
+                    <span class="ti-money"></span>
+                    <span>จ่ายค่าเช่า</span>
+                </a>
+            </li>
+            <li>
+                <a href="addpost.php">
+                    <span class="ti-notepad"></span>
+                    <span>เพิ่มเเจ้งเตือน</span>
+                </a>
+            </li>
+            <li>
+                <a href="contact.php">
+                    <span class="ti-help-alt"></span>
+                    <span>ติดต่อเพิ่มเติม</span>
                 </a>
             </li>
             <li>
                 <a href="logout.php">
-                    <span class="ti-settings"></span>
+                    <span class="ti-close"></span>
                     <span>logout</span>
                 </a>
             </li>

@@ -1,0 +1,62 @@
+#examples {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+fieldset {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 48%;
+}
+
+p.result {
+    margin: 0px;
+    padding: 0px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+.button {
+    text-align: right;
+}
+
+.button input {
+    font-weight: bold;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+#dnd_drag {
+    display: none;
+    text-align: center;
+    padding: 1em 0;
+    margin: 1em 0;
+    color: #555;
+    border: 2px dashed #888;
+    border-radius: 7px;
+    cursor: default;
+}
+
+#dnd_drag.hover {
+    border: 2px dashed #000;
+}
+
+#xhr_progress,
+#dnd_progress {
+    background-color: #999;
+    padding: .1em 0;
+    width: 0%;
+}
+
+#xhr_status,
+#dnd_status {
+    font-size: 90%;
+    font-style: italic;
+}

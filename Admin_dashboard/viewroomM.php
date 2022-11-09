@@ -40,7 +40,7 @@ include 'headbar.php';
         <!-- $_SERVER['SCRIPT_NAME'] เช็คสคิปที่ทำงานอยู่บนเซิฟเวอร์เสมือน -->
         <table width = 1000 border="1">
             <tr>
-                <th>ค้นหาหมายเลขห้อง
+                <th>ค้นหาห้อง
                     <input name="txtKeyword" type="text" id="txtKeyword" value="<?php echo $strKeyword ?>">
                     <input type="submit" value="Search">
                 </th>
@@ -49,13 +49,12 @@ include 'headbar.php';
     </form>
     <table width="1000" border="1">
             <tr>
-                <th width= "100">หมายเลขห้อง</th>
-                <th width= "100">ชื่อผู้เช่าห้อง</th>
+                <th width= "100">รหัสห้อง</th>
                 <th width= "100">ประเภทห้อง</th>
                 <th width= "100">ราคา</th>
-                <th width= "100">วันที่เริ่มเข้าพัก</th>
+<!--                 <th width= "100">วันที่เริ่มเข้าพัก</th>
                 <th width= "100">แก้ไขข้อมูล</th>
-                <th width= "100">ลบข้อมูล</th>
+                <th width= "100">ลบข้อมูล</th> -->
             </tr>
             <?php
                 while($result=mysqli_fetch_array($query,MYSQLI_ASSOC))
@@ -65,12 +64,11 @@ include 'headbar.php';
                   ?>  
                   <tr>
                       <td><?php echo $result["roomid"];?></td>
-                      <td><?php echo $result["userroom"];?></td>
                       <td><?php echo $result["typeroom"];?></td>
                       <td><?php echo $result["price"];?></td>
-                      <td><?php echo $result["startdate"];?></td>
+<!--                       <td><?php echo $result["startdate"];?></td>
                       <td> <a href="editroom.php?id=<?php echo $result["roomid"];?>">แก้ไขข้อมูล</a> </td>
-                      <td> <a href="deleteroom.php?id=<?php echo $result["roomid"];?>">ลบข้อมูล</a></td>
+                      <td> <a href="deleteroom.php?id=<?php echo $result["roomid"];?>">ลบข้อมูล</a></td> -->
                   </tr>
                   <?php
                 }
